@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GameStore
+namespace GameStoreV2
 {
     public partial class LoginForm : Form
     {
@@ -17,16 +17,15 @@ namespace GameStore
             InitializeComponent();
         }
 
-        private void btnCart_Click(object sender, EventArgs e)
-        {
-
-            FormCart newform = new FormCart();
-            newform.ShowDialog(this);
-        }
-
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            FormStoteLogin newForm = new FormStoteLogin();
+            newForm.ShowDialog(this);
         }
     }
 }

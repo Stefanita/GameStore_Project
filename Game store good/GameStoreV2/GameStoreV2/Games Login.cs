@@ -8,18 +8,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GameStore
+namespace GameStoreV2
 {
-    public partial class FormCart : Form
+    public partial class FormGamesLogin : Form
     {
-        public FormCart()
+        public FormGamesLogin()
         {
             InitializeComponent();
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void btnCart_Click(object sender, EventArgs e)
+        {
+            FormCart newForm = new FormCart();
+            newForm.ShowDialog(this);
         }
     }
 }

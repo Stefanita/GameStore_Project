@@ -7,7 +7,4 @@ C:\Users\Stefanita\Desktop\Facultate\Anu 2 Ruse\Integrated Enviroments\Project\G
 C:\Users\Stefanita\Desktop\Facultate\Anu 2 Ruse\Integrated Enviroments\Project\GameStore\GameStore\obj\Debug\GameStore.csproj.CoreCompileInputs.cache
 C:\Users\Stefanita\Desktop\Facultate\Anu 2 Ruse\Integrated Enviroments\Project\GameStore\GameStore\obj\Debug\GameStore.exe
 C:\Users\Stefanita\Desktop\Facultate\Anu 2 Ruse\Integrated Enviroments\Project\GameStore\GameStore\obj\Debug\GameStore.pdb
-C:\Users\Stefanita\Desktop\Facultate\Anu 2 Ruse\Integrated Enviroments\Project\GameStore\GameStore\obj\Debug\GameStore.LoginForm.resources
-C:\Users\Stefanita\Desktop\Facultate\Anu 2 Ruse\Integrated Enviroments\Project\GameStore\GameStore\obj\Debug\GameStore.FormGuest.resources
-C:\Users\Stefanita\Desktop\Facultate\Anu 2 Ruse\Integrated Enviroments\Project\GameStore\GameStore\obj\Debug\GameStore.FormCart.resources
 C:\Users\Stefanita\Desktop\Facultate\Anu 2 Ruse\Integrated Enviroments\Project\GameStore\GameStore\obj\Debug\GameStore.GameStore.resources

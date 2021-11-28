@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4376FB47-FD49-437E-9C9B-CDDE26E349D8}</ProjectGuid>
+    <ProjectGuid>{54233A7E-E909-4CD7-960D-E5EFB9E6493B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>GameStore</RootNamespace>
-    <AssemblyName>GameStore</AssemblyName>
+    <RootNamespace>GameStoreV2</RootNamespace>
+    <AssemblyName>GameStoreV2</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,21 +46,79 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GameStore.cs">
+    <Compile Include="FormCart.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GameStore.Designer.cs">
-      <DependentUpon>GameStore.cs</DependentUpon>
+    <Compile Include="FormCart.Designer.cs">
+      <DependentUpon>FormCart.cs</DependentUpon>
     </Compile>
-    <Compile Include="GameStoreDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GameStoreDataSet.xsd</DependentUpon>
+    <Compile Include="Games Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Games Login.Designer.cs">
+      <DependentUpon>Games Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStoreLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStoreLogin.Designer.cs">
+      <DependentUpon>FormStoreLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search a Game .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search a Game .Designer.cs">
+      <DependentUpon>Search a Game .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Games.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Games.Designer.cs">
+      <DependentUpon>Games.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Steam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Steam.Designer.cs">
+      <DependentUpon>Steam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartForm.Designer.cs">
+      <DependentUpon>StartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="GameStore.resx">
-      <DependentUpon>GameStore.cs</DependentUpon>
+    <EmbeddedResource Include="FormCart.resx">
+      <DependentUpon>FormCart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Games Login.resx">
+      <DependentUpon>Games Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStoreLogin.resx">
+      <DependentUpon>FormStoreLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search a Game .resx">
+      <DependentUpon>Search a Game .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Games.resx">
+      <DependentUpon>Games.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Steam.resx">
+      <DependentUpon>Steam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartForm.resx">
+      <DependentUpon>StartForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -71,17 +129,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="GameStoreDataSet.xsc">
-      <DependentUpon>GameStoreDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="GameStoreDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>GameStoreDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="GameStoreDataSet.xss">
-      <DependentUpon>GameStoreDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

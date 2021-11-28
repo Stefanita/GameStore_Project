@@ -8,32 +8,27 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GameStore
+namespace GameStoreV2
 {
-    public partial class GameStore : Form
+    public partial class FormSteam : Form
     {
-        public GameStore()
+        public FormSteam()
         {
             InitializeComponent();
         }
 
-        private void lbEmail_Click(object sender, EventArgs e)
+        private void btnStart_Click(object sender, EventArgs e)
         {
-            
+            FormStore newForm = new FormStore();
+            newForm.ShowDialog(this);
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            //LoginForm newForm = new LoginForm();
-           // newForm.ShowDialog(this);
-            
-        }
-
-        private void btnGuest_Click(object sender, EventArgs e)
-        {
-            //FormGuest newform = new FormGuest();
-           // newform.ShowDialog(this);
            
+            LoginForm newForm = new LoginForm();
+            newForm.ShowDialog(this);
+            
         }
 
         private void btnExit_Click(object sender, EventArgs e)

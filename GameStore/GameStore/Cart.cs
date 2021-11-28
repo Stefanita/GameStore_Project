@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace GameStore
 {
-    public partial class FormGuest : Form
+    public partial class Cart : Form
     {
-        public FormGuest()
+        public Cart()
         {
             InitializeComponent();
-        }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            this.Hide();
         }
     }
 }
