@@ -38,17 +38,21 @@ namespace GameStoreV2
             // 
             // btnBack
             // 
+            this.btnBack.BackColor = System.Drawing.Color.Transparent;
+            this.btnBack.ForeColor = System.Drawing.Color.Black;
             this.btnBack.Location = new System.Drawing.Point(605, 372);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(173, 66);
             this.btnBack.TabIndex = 0;
             this.btnBack.Text = "Back";
-            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(15, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 21);
@@ -57,6 +61,8 @@ namespace GameStoreV2
             // 
             // textBox1
             // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.textBox1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.textBox1.Location = new System.Drawing.Point(103, 27);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(270, 22);
@@ -64,12 +70,14 @@ namespace GameStoreV2
             // 
             // btnSearch
             // 
+            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
+            this.btnSearch.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSearch.Location = new System.Drawing.Point(412, 17);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(126, 37);
             this.btnSearch.TabIndex = 3;
             this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.UseVisualStyleBackColor = false;
             // 
             // SearchForm
             // 

@@ -45,13 +45,13 @@ namespace GameStoreV2
             this.searchAGameToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(603, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(630, 379);
+            this.btnBack.Location = new System.Drawing.Point(433, 379);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(158, 59);
             this.btnBack.TabIndex = 2;
@@ -78,7 +78,7 @@ namespace GameStoreV2
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(603, 450);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

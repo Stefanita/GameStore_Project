@@ -10,22 +10,24 @@ using System.Windows.Forms;
 
 namespace GameStoreV2
 {
-    public partial class LoginForm : Form
+    public partial class FormSteam : Form
     {
-        public LoginForm()
+        public FormSteam()
         {
             InitializeComponent();
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-        }
-
         private void btnLogin_Click(object sender, EventArgs e)
         {
+           
             FormStoteLogin newForm = new FormStoteLogin();
             newForm.ShowDialog(this);
+            
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

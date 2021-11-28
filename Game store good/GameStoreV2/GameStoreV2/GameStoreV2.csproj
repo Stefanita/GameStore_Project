@@ -70,29 +70,11 @@
     <Compile Include="Search a Game .Designer.cs">
       <DependentUpon>Search a Game .cs</DependentUpon>
     </Compile>
-    <Compile Include="Games.cs">
+    <Compile Include="GameStore.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Games.Designer.cs">
-      <DependentUpon>Games.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Steam.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Steam.Designer.cs">
-      <DependentUpon>Steam.cs</DependentUpon>
-    </Compile>
-    <Compile Include="StartForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StartForm.Designer.cs">
-      <DependentUpon>StartForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LoginForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LoginForm.Designer.cs">
-      <DependentUpon>LoginForm.cs</DependentUpon>
+    <Compile Include="GameStore.Designer.cs">
+      <DependentUpon>GameStore.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -108,17 +90,8 @@
     <EmbeddedResource Include="Search a Game .resx">
       <DependentUpon>Search a Game .cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Games.resx">
-      <DependentUpon>Games.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LoginForm.resx">
-      <DependentUpon>LoginForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Steam.resx">
-      <DependentUpon>Steam.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StartForm.resx">
-      <DependentUpon>StartForm.cs</DependentUpon>
+    <EmbeddedResource Include="GameStore.resx">
+      <DependentUpon>GameStore.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

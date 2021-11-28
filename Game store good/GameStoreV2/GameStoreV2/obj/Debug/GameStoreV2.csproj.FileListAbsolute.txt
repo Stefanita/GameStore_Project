@@ -8,9 +8,6 @@ C:\Users\Stefanita\Desktop\Facultate\Anu 2 Ruse\Integrated Enviroments\Project\G
 C:\Users\Stefanita\Desktop\Facultate\Anu 2 Ruse\Integrated Enviroments\Project\Game store good\GameStoreV2\GameStoreV2\obj\Debug\GameStoreV2.exe
 C:\Users\Stefanita\Desktop\Facultate\Anu 2 Ruse\Integrated Enviroments\Project\Game store good\GameStoreV2\GameStoreV2\obj\Debug\GameStoreV2.pdb
 C:\Users\Stefanita\Desktop\Facultate\Anu 2 Ruse\Integrated Enviroments\Project\Game store good\GameStoreV2\GameStoreV2\obj\Debug\GameStoreV2.FormSteam.resources
-C:\Users\Stefanita\Desktop\Facultate\Anu 2 Ruse\Integrated Enviroments\Project\Game store good\GameStoreV2\GameStoreV2\obj\Debug\GameStoreV2.FormStore.resources
-C:\Users\Stefanita\Desktop\Facultate\Anu 2 Ruse\Integrated Enviroments\Project\Game store good\GameStoreV2\GameStoreV2\obj\Debug\GameStoreV2.LoginForm.resources
-C:\Users\Stefanita\Desktop\Facultate\Anu 2 Ruse\Integrated Enviroments\Project\Game store good\GameStoreV2\GameStoreV2\obj\Debug\GameStoreV2.FormGames.resources
 C:\Users\Stefanita\Desktop\Facultate\Anu 2 Ruse\Integrated Enviroments\Project\Game store good\GameStoreV2\GameStoreV2\obj\Debug\GameStoreV2.SearchForm.resources
 C:\Users\Stefanita\Desktop\Facultate\Anu 2 Ruse\Integrated Enviroments\Project\Game store good\GameStoreV2\GameStoreV2\obj\Debug\GameStoreV2.FormStoteLogin.resources
 C:\Users\Stefanita\Desktop\Facultate\Anu 2 Ruse\Integrated Enviroments\Project\Game store good\GameStoreV2\GameStoreV2\obj\Debug\GameStoreV2.FormGamesLogin.resources
