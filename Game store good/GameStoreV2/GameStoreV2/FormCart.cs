@@ -20,6 +20,8 @@ namespace GameStoreV2
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
+            //FormStoteLogin newForm = new FormStoteLogin();
+         //  newForm.ShowDialog(this);
         }
 
         private void btnPay_Click(object sender, EventArgs e)

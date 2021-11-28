@@ -19,6 +19,7 @@ namespace GameStoreV2
 
         private void searchAGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.Hide();
             SearchForm newForm = new SearchForm();
             newForm.ShowDialog(this);
         }
@@ -26,10 +27,13 @@ namespace GameStoreV2
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
+            FormSteam newForm = new FormSteam();
+            newForm.ShowDialog(this);
         }
 
         private void gamesToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.Hide();
            FormGamesLogin newForm = new FormGamesLogin();
             newForm.ShowDialog(this);
         }
