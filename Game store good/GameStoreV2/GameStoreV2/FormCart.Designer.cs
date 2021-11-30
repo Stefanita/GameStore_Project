@@ -29,13 +29,22 @@ namespace GameStoreV2
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCart));
             this.btnBack = new System.Windows.Forms.Button();
             this.btnPay = new System.Windows.Forms.Button();
             this.btnInvoice = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.gameNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.relasedateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.starsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cartBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gameStoreV2DataSet = new GameStoreV2.GameStoreV2DataSet();
+            this.cartTableAdapter = new GameStoreV2.GameStoreV2DataSetTableAdapters.CartTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cartBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gameStoreV2DataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // btnBack
@@ -66,16 +75,7 @@ namespace GameStoreV2
             this.btnInvoice.TabIndex = 2;
             this.btnInvoice.Text = "Invoice";
             this.btnInvoice.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(62, 94);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(674, 247);
-            this.dataGridView1.TabIndex = 3;
+            this.btnInvoice.Click += new System.EventHandler(this.btnInvoice_Click);
             // 
             // btnDelete
             // 
@@ -85,6 +85,67 @@ namespace GameStoreV2
             this.btnDelete.TabIndex = 4;
             this.btnDelete.Text = "Delete ";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.gameNameDataGridViewTextBoxColumn,
+            this.relasedateDataGridViewTextBoxColumn,
+            this.starsDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.cartBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(62, 94);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(674, 247);
+            this.dataGridView1.TabIndex = 3;
+            // 
+            // gameNameDataGridViewTextBoxColumn
+            // 
+            this.gameNameDataGridViewTextBoxColumn.DataPropertyName = "Game_Name";
+            this.gameNameDataGridViewTextBoxColumn.HeaderText = "Game_Name";
+            this.gameNameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.gameNameDataGridViewTextBoxColumn.Name = "gameNameDataGridViewTextBoxColumn";
+            this.gameNameDataGridViewTextBoxColumn.ReadOnly = true;
+            this.gameNameDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // relasedateDataGridViewTextBoxColumn
+            // 
+            this.relasedateDataGridViewTextBoxColumn.DataPropertyName = "relase_date";
+            this.relasedateDataGridViewTextBoxColumn.HeaderText = "relase_date";
+            this.relasedateDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.relasedateDataGridViewTextBoxColumn.Name = "relasedateDataGridViewTextBoxColumn";
+            this.relasedateDataGridViewTextBoxColumn.ReadOnly = true;
+            this.relasedateDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // starsDataGridViewTextBoxColumn
+            // 
+            this.starsDataGridViewTextBoxColumn.DataPropertyName = "Stars";
+            this.starsDataGridViewTextBoxColumn.HeaderText = "Stars";
+            this.starsDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.starsDataGridViewTextBoxColumn.Name = "starsDataGridViewTextBoxColumn";
+            this.starsDataGridViewTextBoxColumn.ReadOnly = true;
+            this.starsDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // cartBindingSource
+            // 
+            this.cartBindingSource.DataMember = "Cart";
+            this.cartBindingSource.DataSource = this.gameStoreV2DataSet;
+            // 
+            // gameStoreV2DataSet
+            // 
+            this.gameStoreV2DataSet.DataSetName = "GameStoreV2DataSet";
+            this.gameStoreV2DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // cartTableAdapter
+            // 
+            this.cartTableAdapter.ClearBeforeFill = true;
             // 
             // FormCart
             // 
@@ -101,7 +162,10 @@ namespace GameStoreV2
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormCart";
             this.Text = "Cart";
+            this.Load += new System.EventHandler(this.FormCart_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cartBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gameStoreV2DataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -111,7 +175,13 @@ namespace GameStoreV2
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnPay;
         private System.Windows.Forms.Button btnInvoice;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private GameStoreV2DataSet gameStoreV2DataSet;
+        private System.Windows.Forms.BindingSource cartBindingSource;
+        private GameStoreV2DataSetTableAdapters.CartTableAdapter cartTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gameNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn relasedateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn starsDataGridViewTextBoxColumn;
     }
 }

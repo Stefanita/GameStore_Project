@@ -11,34 +11,27 @@ using System.Data.SqlClient;
 
 namespace GameStoreV2
 {
-    public partial class FormStoteLogin : Form
+    public partial class FormAddons : Form
     {
-
         SqlConnection con = new SqlConnection(@"Data Source=TORO;Initial Catalog=GameStoreV2;Integrated Security=True");
-        public FormStoteLogin()
+        public FormAddons()
         {
+          
             InitializeComponent();
-        }
-
-        private void searchAGameToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            SearchForm newForm = new SearchForm();
-            newForm.ShowDialog(this);
         }
 
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormSteam newForm = new FormSteam();
+            FormGamesLogin newForm = new FormGamesLogin();
             newForm.ShowDialog(this);
         }
 
-        private void gamesToolStripMenuItem_Click(object sender, EventArgs e)
+        private void FormAddons_Load(object sender, EventArgs e)
         {
-            this.Hide();
-           FormGamesLogin newForm = new FormGamesLogin();
-            newForm.ShowDialog(this);
+            // TODO: This line of code loads data into the 'gameStoreV2DataSet1.Dlc' table. You can move, or remove it, as needed.
+            this.dlcTableAdapter.Fill(this.gameStoreV2DataSet1.Dlc);
+
         }
     }
 }
